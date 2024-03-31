@@ -1,0 +1,524 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@0200;300;400;600;700&display=swap');
+
+:root{
+    --green:#BF1B2C;
+    --black:#192a56;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+
+}
+
+*{
+    font-family:'Nunito',sans-serif;
+    margin:0; padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+section:nth-child(even){
+    background: #eee;
+}
+
+.sub-heading{
+    text-align: center;
+    color: var(--green);
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+
+.heading{
+    text-align: center;
+    color: var(--black);
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--black);
+    border-radius: .5rem;
+    cursor: pointer;
+    padding: .8rem 3rem;
+}
+.btn:hover{
+    background: var(--green);
+    letter-spacing: .1rem;
+}
+
+header{
+    position: fixed;
+    top:0; left:0; right:0;
+    background: #fff;
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+}
+
+header .logo{
+    color:var(--black);
+    font-size: 2.5rem;
+    font-weight:bolder;
+}
+header .logo i{
+    color:var(--green);
+}
+header .navbar a{
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    color: var(--light-color);
+}
+header .navbar a:active,
+header .navbar a:hover{
+    color: #fff;
+    background: var(--green);
+}
+
+header .icons i,
+header .icons a{
+    cursor: pointer;
+    margin-left: .5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: var(--black);
+    border-radius:50%;
+    background: #eee;
+}
+
+header .icons i:hover,
+header .icons a:hover{
+    color:#fff;
+    background: var(--green);
+    transform: rotate(360deg);
+}
+header .icons #menu-bars{
+    display: none;
+}
+
+#search-form{
+    position:fixed;
+    top:-110%; left:0;
+    height:100%; width:100%;
+    z-index: 1004;
+    background: rgba(0,0,0,.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:0 1rem;
+}
+#search-form.active{
+    top: 0;
+}
+
+#search-form #search-box{
+    width: 50rem;
+    border-bottom: .1rem solid #fff;
+    padding: 1rem 0;
+    color: #fff;
+    font-size: 3rem;
+    text-transform: none;
+    background: none;
+}
+#search-form #search-box::placeholder{
+    color: #eee;
+}
+#search-form #search-box::-webkit-search-cancel-button{
+    -webkit-appearance: none;
+}
+#search-form label{
+    color:#fff;
+    cursor: pointer;
+    font-size: 3rem;
+}
+#search-form label:hover{
+    color:var(--green);
+}
+#search-form #close{
+    position: absolute;
+    color:#fff;
+    cursor: pointer;
+    top:2rem; right:3rem;
+    font-size: 5rem;
+}
+
+/* Login Form */
+.form {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.form input[type="name"],
+.form input[type="email"],
+.form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #BF1B2C;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form button:hover {
+    background-color: #98151D;
+}
+
+.form .link {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.form .icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.form .icons a {
+    margin: 0 10px;
+    font-size: 20px;
+    color: #666;
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+    .form {
+        max-width: 80%;
+    }
+}
+
+
+
+.home .home-slider .slide{
+    display: flex;
+    align-items:center;
+    flex-wrap: wrap;
+    gap:2rem;
+    padding-top: 9rem;
+}
+.home .home-slider .slide .content{
+    flex:1 1 45rem;
+}
+.home .home-slider .slide .image{
+    flex:1 1 45rem;
+}
+.home .home-slider .slide .image img{
+    width: 100%;
+    align-items: center;
+}
+.home .home-slider .slide .content span{
+    color:var(--green);
+    font-size: 2.5rem;
+}
+.home .home-slider .slide .content h3{
+    color:var(--black);
+    font-size: 10rem;
+}
+.home .home-slider .slide .content p{
+    color:var(--light-color);
+    font-size: 2.5rem;
+    padding: .5rem 0;
+    line-height: 1.5;
+}
+
+.swiper-pagination-bullet-active{
+    background: var(--green);
+}
+
+.swiper-container {
+    overflow: hidden; /* Prevents any part of the slides from being visible outside the container */
+}
+
+.swiper-slide {
+    width: 100%; /* Each slide will take up the full width of the container */
+    height: 650px;
+    display: flex; /* This will help in aligning the content and image side by side */
+    justify-content: center; /* This centers the content horizontally */
+    align-items: center; /* This centers the content vertically */
+}
+
+.image {
+    flex-shrink: 0; /* Prevents the image from shrinking */
+    width: 100%; /* Adjust the width as needed */
+    height: auto; /* Keeps the aspect ratio of the image */
+}
+
+.content {
+    width: 50%; /* Adjust the width as needed */
+    padding: 5px; /* Adds some padding inside the content area */
+}
+
+.image img {
+    max-width: 100%;
+    min-width: 200px; 
+    max-height: 100%;
+    min-height: 200px;
+    height: 400px;
+    display: block;
+}
+
+.about .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    align-items: center;
+}
+
+.about .row .image{
+    flex:1 1 40rem;
+}
+.about .row .image img{
+    width: 100%;
+}
+.about .row .content{
+    flex:1 1 45rem;
+}
+.about .row .content h3{
+    color:var(--black);
+    font-size: 4rem;
+    padding:5px;
+}
+.about .row .content p{
+    color:var(--light-color);
+    font-size: 1.8rem;
+    padding:5px;
+    line-height: 2;
+}
+.about .row .content .icons-container{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    margin-top: .5rem;
+}
+.about .row .content .icons-container .icons{
+    background: #eee;
+    border-radius: .5rem;
+    border: .1rem solid rgba(0,0,0,.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex: 1 1 17rem;
+    padding:1.5rem 1rem;
+}
+.about .row .content .icons-container .icons i{
+    font-size: 2.5rem;
+    color:var(--green);
+}
+.about .row .content .icons-container .icons span{
+    font-size: 1.5rem;
+    color:var(--black);
+}
+
+.review .slide{
+    padding:2rem;
+    box-shadow:var(--box-shadow);
+    border: .1rem solid rgba(0,0,0,.2);
+    border-radius: .5rem;
+    position: relative;
+}
+.review .slide .fa-quote-right{
+    position:absolute;
+    top:2rem; right:2rem;
+    font-size: 6rem;
+    color: #ccc;
+}
+
+.review .slide .user{
+    display: flex;
+    gap:1.5rem;
+    align-items: center;
+    padding-bottom: 1.5rem;
+}
+
+.review .slide .user img{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.review .slide .user h3{
+    color:var(--black);
+    font-size: 2rem;
+    padding-bottom: .5rem;
+}
+.review .slide .user i{
+    font-size: 1.3rem;
+    color:var(--green);
+}
+
+.review .slide p{
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color:var(--light-color);
+}
+
+.review .swiper-container {
+    width: 100%;
+    height: 20%;
+    overflow: hidden;
+}
+
+.review .swiper-wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap; /* Ensure that slides are not wrapped to the next line */
+}
+
+.review .swiper-slide {
+    flex-shrink: 0;
+    width: 50%; /* Adjust width as needed */
+}
+
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem, 1fr));
+    gap:1.5rem;
+}
+.footer .box-container .box h3{
+    padding:.5rem 0;
+    font-size:2.5rem;
+    color: var(--black);
+}
+
+.footer .box-container .box a{
+    display: block;
+    padding:.5rem 0;
+    font-size:1.5rem;
+    color: var(--light-color);
+}
+
+.footer .box-container .box a:hover{
+    color: var(--green);
+    text-decoration: underline;
+}
+.footer .credit{
+    text-align: center;
+    border-top: .1rem solid rgba(0,0,0,.1);
+    font-size:2rem;
+    color: var(--black);
+    padding:.5rem;
+    padding-top: 1.5rem;
+    margin-top:1.5rem;
+}
+.footer .credit span{
+    color: var(--green);
+}
+
+.loader-container{
+    position:fixed;
+    top:0;left:0;
+    height: 100%;
+    width: 100%;
+    z-index: 10000;
+    background: #fff;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.loader-container img{
+    width: 35rem;
+}
+
+
+
+/* media queries */
+@media (max-width:991px){
+    html{
+        font-size: 55%;  
+    }
+    header{
+        padding:1rem 2rem;
+    }
+    section{
+        padding:2rem;
+    }
+}
+
+@media (max-width:768px){
+
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: #fff;
+        border-top: .1rem solid rgba(0,0,0,.2);
+        border-bottom: .1rem solid rgba(0,0,0,.2);
+        padding: 1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .navbar .active{
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .navbar a{
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem ;
+        font-size: 2rem;
+        background: #eee;
+    }
+    #search-form #search-box{
+        width: 90%;
+        margin:0 1rem;
+    }
+
+    .home .home-slider .slide .content h3{
+        font-size: 5rem;
+    }
+}
+
+@media (max-width:450px){
+    html{
+        font-size: 50%;  
+    }
+    
+
+}
