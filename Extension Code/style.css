@@ -1,0 +1,129 @@
+body {
+    background: white;
+    border: 1px solid #192a56; /* Added border */
+}
+
+#logo {
+    width: 30px; /* Adjust the size as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Add some spacing between the image and text */
+    display: block;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #BF1B2C; /* Adjusted color for livewords */
+    text-align: center;
+   
+}
+.tagline {
+    font-size: 12px; /* Adjusted font size */
+    color: #192a56; /* Adjusted color for tagline */
+    /* Increased margin for spacing */
+    text-align: center;
+    padding: 5px;
+}
+.wrapper {
+    width: 300px;
+    text-align: center;
+}
+
+.colorGrid {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+}
+
+.text-input textarea {
+    height: 250px;
+    width: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    background: none;
+    font-size: 18px;
+    padding: 10px 10px;
+    border-radius: 0.3rem;
+    
+  }
+  
+  .text-input textarea::placeholder {
+    color: white;
+    padding: 5px;
+  }
+
+.colorValue {
+    margin-left: 5px;
+    font-weight: bold;
+}
+.selectedtext {
+    display: flex;
+    flex-direction: column; /* Added to stack items vertically */
+    align-items: stretch; /* Added to stretch items to fill the container */
+    margin-top: 20px;
+}
+.wrapper {
+    width: 300px;
+    text-align: center;
+}
+
+#lang1Select,
+#lang2Select {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.settings-wrapper {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: auto; /* Move settings button to the right */
+}
+
+/* Positioning lang1 and lang2 selection dropdowns and settings button in the same line */
+/* Positioning lang1 and lang2 selection dropdowns and settings button */
+#lang1Select,
+#lang2Select {
+  display: inline-block;
+  vertical-align: middle;
+}
+.TranslateBtn {
+    width: 200px;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    padding: 5px;
+    background: #BF1B2C;
+    cursor: pointer;
+}
+.colorGrid {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+}
+.selectedText {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.text-input textarea {
+    height: 250px;
+    width: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    background: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 0.3rem;
+  }
+  
+  .text-input textarea::placeholder {
+    color: #b7b6b6;
+  }
+
+.colorValue {
+    margin-left: 5px;
+    font-weight: bold;
+}

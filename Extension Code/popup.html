@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <img src = "images/icon16.png" id="logo"> <h2>LiveWords</h2>
+            <p class="tagline">Learn on the Fly: Immerse yourself in languages</p>
+        <!--Conquer languages with every click-->
+        <div class="wrapper">
+            
+            <div class="settings-wrapper">
+                <!-- Lang1 and lang2 selection dropdowns -->
+                <div id="languageSelection" style="display: none;">
+                    <text id = "textDisplay">Browser's Language</text>
+                    <select id="lang1Select"></select><br><br>
+                    <text id = "textDisplay">Learning Language</text>
+                    <select id="lang2Select"></select>
+                </div>
+            </div>
+            <div id="inputContainer">
+            </div>
+            <div class="selectedtext">
+                <br>
+                <textarea spellcheck="false" readonly disabled class="to-text" placeholder="Translation"></textarea>
+                <span class="colorGrid"></span>
+                <span class="colorValue"></span>
+            </div>
+          </div>
+        <script src = "popup.js"></script>
+    </body>
+</html>
+
