@@ -1,4 +1,4 @@
-# LiveWords: Weave Language into Every Word :globe_with_meridians:	
+# LiveWords: Weave Language into Every Word :sewing_needle::computer:
 ![image1](https://github.com/Chhavi007/LiveWords/assets/123095799/c34d6b63-dbd1-4a84-b14e-364326c99748) 
 
 **Visit Website:** [LiveWords: Weave Language into Every Word](https://chhavi007.github.io/LiveWords/)
